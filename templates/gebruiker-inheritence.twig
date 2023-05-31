@@ -1,0 +1,16 @@
+{% extends 'gebruiker.twig' %}
+
+{% block title %}Gebruikers{% endblock %}
+
+{% block heading %}Gebruikers{% endblock %}
+
+{% block content %}
+    {% for gebruiker in gebruikers %}
+        <p>User ID: {{ gebruiker.UserID }}</p>
+        <p>Voornaam: {{ gebruiker.voornaam }}</p>
+        <p>Achternaam: {{ gebruiker.achternaam }}</p>
+        <p>Geboortedatum: {{ gebruiker.geboortedatum }}</p>
+        <p>Leeftijd: {{ gebruiker.leeftijd }}</p>
+       
+    {% endfor %}
+{% endblock %}
